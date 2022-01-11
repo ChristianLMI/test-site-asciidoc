@@ -5,12 +5,16 @@
     <artifactId>test-site-asciidoc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <properties>
+        <site.version>3.10.0</site.version>
+    </properties>
+    
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.10.0</version>
+                <version>${site.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.asciidoctor</groupId>
